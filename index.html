@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      #div1 {
+        background-color: rosybrown;
+        height: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      h2:hover {
+        color: rgb(104, 9, 25);
+      }
+
+      #i1:hover {
+        color: rgb(129, 14, 14);
+        text-decoration: underline;
+        opacity: 0.7;
+      }
+
+      form {
+        text-align: center;
+      }
+
+      h2 {
+          color: rgb(40, 14, 156);
+        text-align: center;
+        padding: 30px;
+        font-size: xx-large;
+        margin-top: 0;
+        text-decoration: underline;
+      }
+
+      .d1 {
+        padding-right: 20px;
+        font-size: large;
+        padding-bottom: 10px;
+      }
+
+      .d2 {
+        font-size: large;
+        padding-bottom: 20px;
+      }
+
+      table {
+          background-color: salmon;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 50px 100px 50px 30px;
+        margin: auto;
+        border-radius: 20px;
+        text-align: center;
+        box-shadow: 0 0 20px orange;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="div1">
+      <h2>Registration Form</h2>
+      <form>
+        <table>
+          <tr>
+            <td class="d1"><label for="">Name</label></td>
+            <td class="d2">
+              <input type="text" placeholder="enter your name" required minlength="3" pattern="[a-Z]" /><br />
+            </td>
+          </tr>
+          <tr>
+            <td class="d1"><label for="">Gender</label></td>
+            <td
+             
+            >
+              <input type="radio" name="gender" />
+              <label>Male</label>
+              <input type="radio" name="gender" />
+              <label>Female</label>
+              <input type="radio" name="gender" />
+              <label>others</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="d1"><label for="">Phone Number</label></td>
+            <td class="d2">
+              <input type="number" placeholder="+91" required minlength="10" maxlength="10" pattern="[0-9]"/><br />
+            </td>
+          </tr>
+          <tr>
+            <td class="d1"><label for="">E-Mail</label></td>
+            <td class="d2">
+              <input type="email" placeholder="Email" required pattern=".+company.com"  /><br />
+            </td>
+          </tr>
+          <tr>
+              <td class="d1"><label>Date of birth</label></td>
+              <td class="d2"> <input type="date" required pattern="00/00/00" placeholder="01/01/2021"/></td></br/>
+          </tr>
+          <tr>
+            <td class="d1"><label for="">Address</label></td>
+            <td class="d2">
+              <textarea cols="20" rows="8" placeholder=" Text Your Adress Here..." ></textarea><br />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="d1">
+              <label for="selector">Select Your Country</label>
+            </td>
+            <td class="d2">
+              <select id="selector" style="padding: 0 45px">
+                <br />
+                <option value="" selected>India</option>
+                <option value="">Australia</option>
+                <option value="">U.S.A</option>
+                <option value="">England</option>
+                <option value="">China</option>
+                <option value="">Pakisthan</option>
+                <option value="">Shreelank</option>
+                <option value="">Japan</option>
+                <option value="">Other</option>
+              </select>
+              <br />
+            </td>
+          </tr>
+          <tr>
+            <td class="d1"><label for="">Password</label></td>
+            <td class="d2">
+              <input
+                type="password"
+                placeholder="Password"
+                required
+                minlength="8"
+                maxlength="15"
+                pattern="[a-Z A-Z 0-9 @-*]"
+              />
+              <br />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <input
+                id="i1"
+                style="padding: 5px 60px; background-color: rgb(92, 49, 250)"
+                type="submit"
+              />
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>
